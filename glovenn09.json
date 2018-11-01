@@ -1,0 +1,30 @@
+{
+    "layers": [
+        {
+            "name": "layer0",
+            "type": "linear",
+            "params": {
+                "inputs": 10,
+                "outputs": 80
+            }
+        },
+        {
+            "name": "layer0 rectifier",
+            "type": "rectify"
+        },
+        {
+            "name": "layerLast",
+            "type": "linear",
+            "params": {
+                "inputs": 80,
+                "outputs": 25
+            }
+        },
+        {
+            "name": "softmax",
+            "type": "softmax"
+        }
+    ],
+    "weightFile": "glovenn09-5-nobias-data2-3-4-combo.weights"
+}
+
