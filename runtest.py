@@ -289,9 +289,9 @@ def realStuff():
     np.random.seed(20)
 
     # get glove data
-    gloveData = np.genfromtxt('../glove_dataset/glove_data_2.csv', delimiter=',')
-    gloveData = np.append(gloveData, np.genfromtxt('../glove_dataset/glove_data_3.csv', delimiter=','), axis = 0)
-    gloveData = np.append(gloveData, np.genfromtxt('../glove_dataset/glove_data_4.csv', delimiter=','), axis = 0)
+    gloveData = np.genfromtxt('glove_dataset/glove_data_2.csv', delimiter=',')
+    gloveData = np.append(gloveData, np.genfromtxt('glove_dataset/glove_data_3.csv', delimiter=','), axis = 0)
+    gloveData = np.append(gloveData, np.genfromtxt('glove_dataset/glove_data_4.csv', delimiter=','), axis = 0)
 
     # separate labels from data
     # labels are in the last column
@@ -309,7 +309,7 @@ def realStuff():
 
 def realLoad():
     # get glove data
-    gloveData = np.genfromtxt('../glove_dataset/glove_data_2.csv', delimiter=',')
+    gloveData = np.genfromtxt('glove_dataset/glove_data_2.csv', delimiter=',')
 
     # separate labels from data
     # labels are in the last column
