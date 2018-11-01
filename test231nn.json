@@ -1,0 +1,42 @@
+{
+    "layers": [
+        {
+            "name": "layer0",
+            "type": "linear",
+            "params": {
+                "inputs": 2,
+                "outputs": 5
+            }
+        },
+        {
+            "name": "layer0 rectifier",
+            "type": "rectify"
+        },
+        {
+            "name": "layer1",
+            "type": "linear",
+            "params": {
+                "inputs": 5,
+                "outputs": 5
+            }
+        },
+        {
+            "name": "layer1 rectifier",
+            "type": "rectify"
+        },
+        {
+            "name": "layer2",
+            "type": "linear",
+            "params": {
+                "inputs": 5,
+                "outputs": 3
+            }
+        },
+        {
+            "name": "softmax",
+            "type": "softmax"
+        }
+    ],
+    "weightFile": "test231nn.weights"
+}
+
